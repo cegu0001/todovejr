@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opgaveliste</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Hvad skal du have gjort?</h1>
+
+    <div class="input-container">
+      <input type="text" id="taskInput" placeholder="Opgave" />
+      <input type="number" id="amountInput" placeholder="Antal (valgfrit)" min="1" />
+      <input type="date" id="dateInput" />
+
+      <label class="outdoor-label">
+        <input type="checkbox" id="outdoorInput" />
+        Udendørs opgave
+      </label>
+
+      <input type="text" id="locationInput" placeholder="Lokation (fx København)" />
+
+      <button id="addBtn">Tilføj opgave</button>
+    </div>
+
+    <p id="feedback"></p>
+
+    <div class="lists">
+      <div>
+        <h2>Mangler</h2>
+        <ul id="todoList"></ul>
+      </div>
+
+      <div>
+        <h2>Færdig</h2>
+        <ul id="doneList"></ul>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
