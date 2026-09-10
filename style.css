@@ -157,7 +157,7 @@ li {
   margin-top: 8px;
   display: inline-block;
   background-color: #a33;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 4px 10px;
   font-size: 0.85rem;
   border-radius: 4px;
